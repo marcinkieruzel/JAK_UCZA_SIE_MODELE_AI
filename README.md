@@ -108,6 +108,39 @@ Oba zawierają cele zajęć, metody pracy, kryteria oceny i wskazówki dydaktycz
 
 ---
 
+## Twoja własna wersja — sforkuj repozytorium
+
+Chcesz dostosować notatnik do swojej klasy, podmienić dane na własne albo dorzucić dodatkowe sekcje? **Sforkuj to repozytorium** na GitHubie — stworzysz wtedy własną, niezależną kopię, którą możesz dowolnie modyfikować.
+
+**Jak to zrobić:**
+
+1. Wejdź na stronę repozytorium: [github.com/marcinkieruzel/JAK_UCZA_SIE_MODELE_AI](https://github.com/marcinkieruzel/JAK_UCZA_SIE_MODELE_AI)
+2. Kliknij przycisk **Fork** w prawym górnym rogu (potrzebujesz konta GitHub).
+3. GitHub utworzy kopię pod Twoim kontem: `github.com/TWOJA_NAZWA/JAK_UCZA_SIE_MODELE_AI`.
+4. Sklonuj swoją kopię lokalnie:
+   ```bash
+   git clone https://github.com/TWOJA_NAZWA/JAK_UCZA_SIE_MODELE_AI.git
+   ```
+5. Modyfikuj, commituj, pushuj do swojego forka — wszystko po Twojej stronie.
+
+**Ważne po forkowaniu:** zaktualizuj **badge „Open in Colab"** na początku `README.md` i `simple_example.ipynb`, by wskazywał na Twoje repozytorium:
+
+```markdown
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TWOJA_NAZWA/JAK_UCZA_SIE_MODELE_AI/blob/main/simple_example.ipynb)
+```
+
+Podobnie zaktualizuj `CSV_URL` w pierwszej komórce kodu notatnika, jeśli plik z danymi też zostanie zmieniony.
+
+**Pomysły na własne modyfikacje:**
+- Podmień `student_exam_scores.csv` na dane z Twojej dziedziny (sport, ekonomia, biologia) — algorytm pozostaje ten sam
+- Dodaj sekcję z regresją wielowymiarową (3 cechy → przewidywanie wyniku)
+- Przepisz GD w PyTorch z `autograd` jako alternatywną ścieżkę dla zainteresowanych
+- Dodaj porównanie z `sklearn.linear_model.LinearRegression` jako sanity check
+
+Jeśli wprowadzisz ulepszenia, które mogą pomóc innym, rozważ wysłanie **Pull Requesta** do oryginalnego repozytorium — chętnie zobaczę, co stworzysz.
+
+---
+
 ## Częste problemy
 
 **Suwaki ipywidgets nie reagują w VSCode**
